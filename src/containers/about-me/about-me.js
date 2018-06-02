@@ -4,7 +4,6 @@ import TwitchIframe from "./twitch-iframe";
 import "./styles/styles.css";
 import "./styles/mobile-styles.css";
 
-
 class AboutMe extends Component {
   state = {
     showScroll: true

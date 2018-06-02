@@ -1,4 +1,13 @@
 @import './animations';
+@font-face {
+  font-family:"Allegro";
+  src: url("../../../assets/ALLEGRO.eot") format("eot"),
+       url("../../../assets/ALLEGRO.woff") format("woff"),
+       url("../../../assets/ALLEGRO.ttf") format("truetype"),
+       url("../../../assets/ALLEGRO.svg#Allegro") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
 
 .section__aboutMe {
   .aboutMe {

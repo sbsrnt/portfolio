@@ -1,7 +1,7 @@
 export default {
   particles: {
     number: {
-      value: window.innerWidth <= 815 ? 15 : 30
+      value: window.innerWidth <= 815 ? 8 : 30
     },
     line_linked: {
       distance: 120
