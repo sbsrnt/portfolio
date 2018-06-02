@@ -143,15 +143,13 @@ abbr, acronym {
   font-weight: normal;
   font-style: normal; }
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  background: url(../assets/sky.jpg) no-repeat center center fixed; }
   body::-webkit-scrollbar {
     width: 0; }
 
 html, #root, .App, .particles {
   height: 100%; }
-
-.App {
-  background: url(../assets/sky.jpg) no-repeat center center fixed; }
 
 canvas {
   position: relative;

@@ -7,21 +7,18 @@
   src: url('../assets/Allegro.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+
 }
 
 body {
   font-family: "Open Sans", sans-serif;
+  background: url(../assets/sky.jpg) no-repeat center center fixed;
+
   &::-webkit-scrollbar{width: 0}
-
-
 }
 
 html, #root, .App, .particles {
   height: 100%;
-}
-
-.App {
-  background: url(../assets/sky.jpg) no-repeat center center fixed;
 }
 
 canvas {

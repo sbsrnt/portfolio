@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import me from "../../assets/me.jpg";
 import TwitchIframe from "./twitch-iframe";
 import "./styles/styles.css";
+import "./styles/mobile-styles.css";
+
 
 class AboutMe extends Component {
   state = {

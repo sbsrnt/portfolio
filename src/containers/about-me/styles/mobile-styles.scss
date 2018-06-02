@@ -2,13 +2,15 @@
 
 @include screen('mobile'){
   .section__aboutMe {
-    .container {
-      img {
-        width: 100px;
-        height: 100px;
-
+    .aboutMe {
+      .container {
+        img {
+          width: 100px;
+          height: 100px;
+        }
         h2 {
           font-size: 1.5em;
+          text-align: center;
         }
 
         .title {
