@@ -1,0 +1,10 @@
+@import '../../../styles/mixins';
+@include screen('mobile') {
+  .section__projects {
+    .projects {
+      .project {
+        margin: 20px 0;
+      }
+    }
+  }
+}

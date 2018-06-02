@@ -1,0 +1,20 @@
+/*
+ * Desktop
+ */
+@media only screen and (max-width: 815px) {
+  .section__skills .skills__skill .skill {
+    margin: 10px 0; }
+    .section__skills .skills__skill .skill span {
+      font-size: calc(1em + 1vmin); }
+    .section__skills .skills__skill .skill p {
+      padding: 4px 4px; } }
+/*
+ * Desktop
+ */
+@media only screen and (min-width: 816px) and (max-width: 1365px) {
+  .section__skills .skills__skill .skill {
+    margin: 10px; }
+    .section__skills .skills__skill .skill span {
+      font-size: calc(2em + 1vmin); } }
+
+/*# sourceMappingURL=mobile-styles.css.map */

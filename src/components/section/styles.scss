@@ -1,0 +1,50 @@
+@import '../../styles/mixins';
+
+section {
+  display: grid;
+  grid-template-rows: 100px auto;
+  height: calc(100vh - 20px);
+
+  h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 10%;
+      background-color: rgba(white, 0.4);
+      bottom: 30px;
+    }
+  }
+
+  &.section__projects {
+    h3:after {
+      width: 20%;
+    }
+  }
+
+  > ul, > div {
+    padding: 10px;
+  }
+}
+
+@include screen('mobile'){
+ section {
+
+   h3:after {
+     width: 50%;
+   }
+
+   &.section__projects, &.section__aboutMe {
+     h3:after {
+       width: 70%;
+     }
+   }
+ }
+}

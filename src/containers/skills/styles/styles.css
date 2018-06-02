@@ -1,0 +1,75 @@
+.section__skills .skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0; }
+  .section__skills .skills__skill {
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+    .section__skills .skills__skill:last-child .branches {
+      border-right: 0; }
+    .section__skills .skills__skill--frontend {
+      width: 50%; }
+    .section__skills .skills__skill--backend {
+      width: 30%; }
+    .section__skills .skills__skill--testing, .section__skills .skills__skill--tests {
+      width: 20%; }
+    .section__skills .skills__skill .branches, .section__skills .skills__skill .subBranch__skills {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      align-content: flex-start;
+      border-right: 1px solid rgba(255, 255, 255, 0.1); }
+      .section__skills .skills__skill .branches li:last-child, .section__skills .skills__skill .subBranch__skills li:last-child {
+        border: 0; }
+    .section__skills .skills__skill .branches {
+      margin-top: 25px; }
+      .section__skills .skills__skill .branches .subBranch {
+        width: 50%; }
+        .section__skills .skills__skill .branches .subBranch:last-child .subBranch__skills {
+          border-right: 0; }
+        .section__skills .skills__skill .branches .subBranch h3 {
+          text-align: center;
+          text-transform: uppercase; }
+    .section__skills .skills__skill .skill {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 20px; }
+      .section__skills .skills__skill .skill span {
+        font-size: calc(4em + 1vmin);
+        margin-bottom: 10px; }
+      .section__skills .skills__skill .skill p {
+        background: rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 4px 10px;
+        font-size: calc(.5em + .5vmin);
+        text-align: center; }
+.section__skills h4, .section__skills h5 {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+  text-transform: uppercase; }
+  .section__skills h4:after, .section__skills h5:after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    width: 40%;
+    bottom: 0;
+    transform: translate(-50%);
+    left: 50%; }
+.section__skills h4 {
+  font-size: calc(.8em + 1vmin);
+  opacity: .9; }
+.section__skills h5 {
+  font-size: calc(.6em + 1vmin);
+  opacity: .8; }
+
+/*# sourceMappingURL=styles.css.map */

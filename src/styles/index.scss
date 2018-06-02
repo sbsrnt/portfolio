@@ -1,0 +1,36 @@
+@import './reset';
+@import './icons';
+@import './mixins';
+
+body {
+  font-family: "Open Sans", sans-serif;
+  &::-webkit-scrollbar{width: 0}
+}
+
+html, #root, .App, .particles {
+  height: 100%;
+}
+
+.App {
+  background: url(../assets/sky.jpg) no-repeat center center fixed;
+}
+
+canvas {
+  position: relative;
+  z-index: 0;
+}
+
+.particles{
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.sections {
+  width: calc(100% - 20px);
+  padding: 10px;
+  color: white;
+}

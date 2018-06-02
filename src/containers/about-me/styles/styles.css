@@ -1,0 +1,144 @@
+@keyframes scroll {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: translateY(46px); } }
+@keyframes hideScroll {
+  0% {
+    opacity: 1; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    display: none; } }
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 0.0; }
+  25% {
+    -webkit-transform: scale(1.35);
+    opacity: 0.1; }
+  50% {
+    -webkit-transform: scale(1.7);
+    opacity: 0.3; }
+  75% {
+    -webkit-transform: scale(2.05);
+    opacity: 0.5; }
+  100% {
+    -webkit-transform: scale(2.4);
+    opacity: 0.0; } }
+.section__aboutMe .aboutMe {
+  position: relative; }
+  .section__aboutMe .aboutMe .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100% - 5.5vh); }
+    .section__aboutMe .aboutMe .container img {
+      padding: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      width: 150px;
+      height: 150px;
+      margin-bottom: 25px; }
+    .section__aboutMe .aboutMe .container h2 {
+      font-size: 2em; }
+    .section__aboutMe .aboutMe .container .title {
+      opacity: .95;
+      font-size: 1.8em; }
+    .section__aboutMe .aboutMe .container .description {
+      text-align: left;
+      margin-top: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      background: rgba(0, 0, 0, 0.1);
+      padding: 10px; }
+      .section__aboutMe .aboutMe .container .description p {
+        margin-bottom: 10px; }
+        .section__aboutMe .aboutMe .container .description p span {
+          color: #00d8ff;
+          font-weight: bold;
+          font-size: 1.4em; }
+        .section__aboutMe .aboutMe .container .description p a {
+          color: white; }
+        .section__aboutMe .aboutMe .container .description p:last-child {
+          margin-bottom: 0; }
+  .section__aboutMe .aboutMe .twitchIframe {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0; }
+    .section__aboutMe .aboutMe .twitchIframe:not(.loading) {
+      border: 1px solid rgba(255, 255, 255, 0.3); }
+    .section__aboutMe .aboutMe .twitchIframe.offline {
+      display: none; }
+    .section__aboutMe .aboutMe .twitchIframe iframe {
+      height: 100%;
+      width: 100%; }
+    .section__aboutMe .aboutMe .twitchIframe .live {
+      position: fixed;
+      top: 50px;
+      right: 50px;
+      background: rgba(255, 255, 255, 0.2);
+      z-index: 1001;
+      padding: 2.5px;
+      font-size: .9em;
+      border: 1px solid rgba(255, 255, 255, 0.9); }
+      .section__aboutMe .aboutMe .twitchIframe .live.not-really {
+        opacity: .5; }
+        .section__aboutMe .aboutMe .twitchIframe .live.not-really:before, .section__aboutMe .aboutMe .twitchIframe .live.not-really:after {
+          content: none; }
+      .section__aboutMe .aboutMe .twitchIframe .live a {
+        display: flex;
+        align-items: center; }
+        .section__aboutMe .aboutMe .twitchIframe .live a:hover, .section__aboutMe .aboutMe .twitchIframe .live a:active, .section__aboutMe .aboutMe .twitchIframe .live a:link, .section__aboutMe .aboutMe .twitchIframe .live a:visited {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.9); }
+        .section__aboutMe .aboutMe .twitchIframe .live a span {
+          margin-left: 5px; }
+        .section__aboutMe .aboutMe .twitchIframe .live a span:before {
+          color: rgba(255, 255, 255, 0.9); }
+      .section__aboutMe .aboutMe .twitchIframe .live:before, .section__aboutMe .aboutMe .twitchIframe .live:after {
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: red;
+        border-radius: 50%;
+        left: -26px;
+        top: 3px; }
+      .section__aboutMe .aboutMe .twitchIframe .live:before {
+        animation: pulse 2s ease-in infinite; }
+.section__aboutMe .icon-scroll, .section__aboutMe .icon-scroll:before {
+  position: absolute;
+  left: 50%; }
+.section__aboutMe .icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+  animation-duration: 4.5s;
+  animation-iteration-count: 1;
+  animation-name: hideScroll; }
+  .section__aboutMe .icon-scroll.hidden {
+    display: none; }
+  .section__aboutMe .icon-scroll:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,174 @@
+@import './animations';
+
+.section__aboutMe {
+  .aboutMe {
+    position: relative;
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: calc(100% - 5.5vh);
+
+      img {
+        padding: 10px;
+        border: 1px solid rgba(white, .4);
+        width: 150px;
+        height: 150px;
+        margin-bottom: 25px;
+      }
+
+      h2{
+        font-size: 2em;
+      }
+
+      .title {
+        opacity: .95;
+        font-size: 1.8em;
+      }
+
+      .description {
+        text-align: left;
+        margin-top: 25px;
+        border: 1px solid rgba(white, .4);
+        background: rgba(black, .1);
+        padding: 10px;
+
+        p {
+          margin-bottom: 10px;
+
+          span{
+            color: #00d8ff;
+            font-weight: bold;
+            font-size: 1.4em;
+          }
+
+          a{
+            color: white;
+          }
+
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .twitchIframe {
+      position: absolute;
+      height: 200px;
+      width: 300px;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 0;
+      top: 0;
+
+      &:not(.loading){
+        border: 1px solid rgba(255, 255, 255, .3);
+      }
+
+      &.offline {
+        display: none;
+      }
+
+      iframe {
+        height: 100%;
+        width: 100%;
+      }
+
+      .live {
+        position: fixed;
+        top: 50px;
+        right: 50px;
+        background: rgba(255,255,255, .2);
+        z-index: 1001;
+        padding: 2.5px;
+        font-size: .9em;
+        border: 1px solid rgba(white, .9);
+
+        &.not-really {
+          opacity: .5;
+
+          &:before, &:after {
+            content: none;
+          }
+        }
+
+        a{
+          display: flex;
+          align-items: center;
+
+          &:hover, &:active, &:link, &:visited {
+            text-decoration: none;
+            color: rgba(white, .9);
+          }
+
+          span {
+            margin-left: 5px;
+          }
+          span:before {
+            color: rgba(white, .9)
+          }
+        }
+
+        &:before, &:after {
+          content: "";
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          background: red;
+          border-radius: 50%;
+          left: -26px;
+          top: 3px;
+        }
+
+        &:before{
+          animation: pulse 2s ease-in infinite;
+        }
+
+        &:hover {
+
+        }
+      }
+
+    }
+  }
+
+  .icon-scroll, .icon-scroll:before {
+    position: absolute;
+    left: 50%
+  }
+
+  .icon-scroll {
+    width: 40px;
+    height: 70px;
+    margin-left: -20px;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 1px #fff;
+    border-radius: 25px;
+
+    &.hidden {
+      display: none;
+    }
+
+    &:before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      margin-left: -4px;
+      top: 8px;
+      border-radius: 4px;
+      animation-duration: 1.5s;
+      animation-iteration-count: infinite;
+      animation-name: scroll;
+    }
+
+    animation-duration: 4.5s;
+    animation-iteration-count: 1;
+    animation-name: hideScroll;
+  }
+}

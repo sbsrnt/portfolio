@@ -1,0 +1,192 @@
+@import '../../../styles/mixins';
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+
+.section__projects {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    @include slim-scrollbar();
+
+    .project {
+      width: 300px;
+      height: 300px;
+      margin: 20px;
+      border: 1px solid rgba(255,255,255,.3);
+      padding: 10px;
+      @include transition(all ease .4s);
+
+      &.fitness-family-club {
+        > a {
+          .project__details {
+            .project__title {
+              font-family: "Allegro", serif;
+              font-size: 2em;
+            }
+          }
+        }
+      }
+
+      &.enhance {
+        > a {
+          .project__details {
+            .project__title {
+              font-family: "Satisfy", cursive;
+              font-size: 2em;
+            }
+          }
+        }
+      }
+
+      &.unpublished {
+        > a{
+          cursor: default;
+        }
+      }
+
+      > a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        position: relative;
+
+        &:visited, &:link, &:hover{
+          text-decoration: none;
+          color: white;
+        }
+
+        .project__preview{
+          position: absolute;
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+        }
+
+        .project__details {
+          position: relative;
+          z-index: 2;
+          height: 100%;
+          width: 100%;
+          display: grid;
+          grid-template-rows: 15% 50% 35%;
+          background: rgba(black, .3);
+          @include transition(all ease .4s);
+
+          .project__title {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-size: 1.4em;
+            border-bottom: 1px solid rgba(255,255,255, .3);
+            background: rgba(black, .5);
+            position: relative;
+            @include transition(all ease .4s);
+
+            code {
+              font-style: normal;
+              font-weight: normal;
+              font-size: 14px;
+              text-transform: uppercase;
+              position: absolute;
+              right: 10px;
+              height: 100%;
+              display: flex;
+              text-decoration: underline;
+              align-items: center;
+            }
+
+            a {
+              position: absolute;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              left: 10px;
+
+               span{
+                 @include transition(all ease .4s);
+               }
+
+              &:hover, &:link, &:visited, &:active {
+                text-decoration: none;
+              }
+
+              &:hover {
+                span {
+                  opacity: .5;
+                }
+              }
+            }
+          }
+
+          .project__description{
+            background: rgba(black, .5);
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            line-height: 1.3;
+            color: rgba(255,255,255, .8);
+            letter-spacing: .4px;
+            text-align: center;
+            @include transition(all ease .4s);
+          }
+
+          .project__stack {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            flex-wrap: wrap;
+            opacity: 1;
+            background: rgba(black, .5);
+            border-top: 1px solid rgba(255,255,255, .3);
+            @include transition(all ease .4s);
+
+            li {
+              padding: 5px;
+              margin: 5px;
+              background: rgba(white,.1);
+              border: 1px solid rgba(white, .4);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+
+      &:hover {
+        border-color: white;
+
+        > a {
+          .project__details {
+            background: transparent;
+
+            .project__title{
+              border-bottom-color: white;
+            }
+
+            .project__stack, .project__description{
+              opacity: 0;
+              background: rgba(black, 0);
+            }
+          }
+        }
+      }
+
+      //&:first-child{
+      //  margin-top: 0;
+      //}
+      //
+      //&:last-child{
+      //  margin-bottom: 0;
+      //}
+    }
+  }
+}

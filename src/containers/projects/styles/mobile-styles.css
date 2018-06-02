@@ -1,0 +1,8 @@
+/*
+ * Desktop
+ */
+@media only screen and (max-width: 815px) {
+  .section__projects .projects .project {
+    margin: 20px 0; } }
+
+/*# sourceMappingURL=mobile-styles.css.map */

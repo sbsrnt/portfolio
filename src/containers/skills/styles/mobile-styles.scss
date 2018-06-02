@@ -1,0 +1,35 @@
+@import '../../../styles/mixins';
+
+@include screen('mobile'){
+  .section__skills {
+    .skills {
+      &__skill {
+        .skill {
+          margin: 10px 0;
+          span {
+            font-size: calc(1em + 1vmin);
+          }
+          p {
+            padding: 4px 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include screen('tablet'){
+  .section__skills {
+    .skills {
+      &__skill {
+        .skill {
+          margin: 10px;
+
+          span {
+            font-size: calc(2em + 1vmin);
+          }
+        }
+      }
+    }
+  }
+}
