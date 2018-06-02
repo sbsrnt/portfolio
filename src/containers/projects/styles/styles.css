@@ -31,7 +31,7 @@
     -moz-transition: all ease 0.4s;
     transition: all ease 0.4s; }
     .section__projects .projects .project.fitness-family-club > a .project__details .project__title {
-      font-family: "Allegro", serif;
+      font-family: Allegro, serif;
       font-size: 2em; }
     .section__projects .projects .project.enhance > a .project__details .project__title {
       font-family: "Satisfy", cursive;

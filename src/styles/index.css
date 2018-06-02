@@ -137,6 +137,11 @@ abbr, acronym {
   content: "\e918";
   color: #cd6799; }
 
+@font-face {
+  font-family: Allegro;
+  src: url("../assets/Allegro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 body {
   font-family: "Open Sans", sans-serif; }
   body::-webkit-scrollbar {

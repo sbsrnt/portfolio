@@ -1,6 +1,8 @@
 @import '../../../styles/mixins';
 @import url('https://fonts.googleapis.com/css?family=Satisfy');
 
+
+
 .section__projects {
   .projects {
     display: flex;
@@ -26,7 +28,7 @@
         > a {
           .project__details {
             .project__title {
-              font-family: "Allegro", serif;
+              font-family: Allegro, serif;
               font-size: 2em;
             }
           }

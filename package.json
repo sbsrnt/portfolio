@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sbsrnt.github.io/portfolio",
+  "homepage": "http://sbsrnt.github.io/portfolio",
   "dependencies": {
     "axios": "^0.18.0",
     "lodash": "^4.17.10",
@@ -19,7 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "cleanup": "rm -rf node_modules/gh-pages/.cache"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
