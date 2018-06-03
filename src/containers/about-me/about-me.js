@@ -39,10 +39,10 @@ class AboutMe extends Component {
             </p>
           </div>
         </div>
-        {window.innerWidth > 815 && <TwitchIframe />}
+        <TwitchIframe />
         <div
           className={`icon-scroll ${
-            !this.state.showScroll ? "hidden" : undefined
+            !this.state.showScroll || window.innerWidth <= 815 ? "hidden" : undefined
           }`}
         />
       </div>

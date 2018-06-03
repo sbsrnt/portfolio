@@ -1,0 +1,22 @@
+/*
+ * Desktop
+ */
+@media only screen and (max-width: 815px) {
+  .section__aboutMe .aboutMe .container img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px; }
+  .section__aboutMe .aboutMe .container h2 {
+    font-size: 1.5em;
+    text-align: center; }
+  .section__aboutMe .aboutMe .container .title {
+    font-size: 1.3em; }
+  .section__aboutMe .aboutMe .container .description {
+    font-size: .8em;
+    text-align: center;
+    margin-top: 10px; }
+  .section__aboutMe .aboutMe .twitchIframe .live {
+    top: 10px;
+    right: 10px; } }
+
+/*# sourceMappingURL=mobile-styles.css.map */

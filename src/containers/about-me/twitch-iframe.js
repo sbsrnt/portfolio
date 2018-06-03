@@ -86,7 +86,7 @@ class TwitchIframe extends Component {
             </a>
           </span>
         )}
-        {!loading && error && live(<p>Could not load stream.</p>)}
+        {!loading && error && window.innerWidth > 1000 && live(<p>Could not load stream.</p>)}
       </div>
     );
   }
