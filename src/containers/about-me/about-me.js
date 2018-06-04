@@ -30,9 +30,9 @@ class AboutMe extends Component {
             <p>Welcome to my portfolio.</p>
             <p>
               I am a <span>Frontend Engineer</span> located in Gdańsk, Poland{" "}
-              <span>who aims to be a unicorn developer</span>.
+              <span>who aims to be a ninja developer</span>.
             </p>
-            <p>Doing my best to be up to date with latest tech.</p>
+            <p>Doing my best to be up to date with the latest tech.</p>
             <p>
               Also sharing programming love while coding my private projects on{" "}
               <a href="https://www.twitch.tv/sbsrnt">Twitch</a>.

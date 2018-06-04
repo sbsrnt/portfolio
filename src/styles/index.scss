@@ -7,19 +7,11 @@
   src: url('../assets/ALLEGRO.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-
-}
-
-html{
-  overflow: hidden;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  overflow: scroll;
   background: black url(../assets/sky.jpg) no-repeat fixed center center;
-
-  @include transition(all ease 1s);
   &::-webkit-scrollbar{width: 0}
 }
 
@@ -45,4 +37,15 @@ canvas {
   width: calc(100% - 20px);
   padding: 10px;
   color: white;
+}
+
+@include screen('mobile'){
+  html{
+    overflow: hidden;
+  }
+
+  body {
+    overflow: scroll;
+    @include transition(all ease 1s);
+  }
 }

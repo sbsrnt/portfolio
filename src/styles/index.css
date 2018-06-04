@@ -142,16 +142,9 @@ abbr, acronym {
   src: url("../assets/ALLEGRO.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
-html {
-  overflow: hidden; }
-
 body {
   font-family: "Open Sans", sans-serif;
-  overflow: scroll;
-  background: black url(../assets/sky.jpg) no-repeat fixed center center;
-  -webkit-transition: all ease 1s;
-  -moz-transition: all ease 1s;
-  transition: all ease 1s; }
+  background: black url(../assets/sky.jpg) no-repeat fixed center center; }
   body::-webkit-scrollbar {
     width: 0; }
 
@@ -174,5 +167,18 @@ canvas {
   width: calc(100% - 20px);
   padding: 10px;
   color: white; }
+
+/*
+ * Desktop
+ */
+@media only screen and (max-width: 815px) {
+  html {
+    overflow: hidden; }
+
+  body {
+    overflow: scroll;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    transition: all ease 1s; } }
 
 /*# sourceMappingURL=index.css.map */
