@@ -10,14 +10,20 @@
 
 }
 
+html{
+  overflow: hidden;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
-  background: url(../assets/sky.jpg) no-repeat center center fixed;
+  overflow: scroll;
+  background: black url(../assets/sky.jpg) no-repeat fixed center center;
 
+  @include transition(all ease 1s);
   &::-webkit-scrollbar{width: 0}
 }
 
-html, #root, .App, .particles {
+html, body, #root, .App, .particles {
   height: 100%;
 }
 

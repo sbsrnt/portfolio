@@ -142,13 +142,20 @@ abbr, acronym {
   src: url("../assets/ALLEGRO.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+html {
+  overflow: hidden; }
+
 body {
   font-family: "Open Sans", sans-serif;
-  background: url(../assets/sky.jpg) no-repeat center center fixed; }
+  overflow: scroll;
+  background: black url(../assets/sky.jpg) no-repeat fixed center center;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  transition: all ease 1s; }
   body::-webkit-scrollbar {
     width: 0; }
 
-html, #root, .App, .particles {
+html, body, #root, .App, .particles {
   height: 100%; }
 
 canvas {

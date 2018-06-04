@@ -4,6 +4,15 @@
     .projects {
       .project {
         margin: 20px 0;
+
+        &:first-child{
+          margin-top: 0;
+        }
+
+
+      }
+      .enhance {
+        margin-bottom: 1px;
       }
     }
   }

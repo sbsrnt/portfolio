@@ -8,7 +8,7 @@ import Contact from "./contact/contact";
 
 const Sections = () => {
   return (
-    <div className="sections">
+    <div className="sections" id="sections">
       <Section title="about me">
         <AboutMe />
       </Section>

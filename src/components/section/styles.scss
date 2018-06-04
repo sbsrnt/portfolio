@@ -36,9 +36,12 @@ section {
 
 @include screen('mobile'){
  section {
+   grid-template-rows: 80px auto;
+   height: calc(100vh - 80px);
 
    h3:after {
      width: 50%;
+     bottom: 20px;
    }
 
    &.section__projects, &.section__aboutMe {
