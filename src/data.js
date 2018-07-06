@@ -7,9 +7,9 @@ export default {
   skills: {
     frontend: {
       general: ["html", "css", "scss", "javascript", "jquery", "lodash"],
-      react: ["react", "redux", "redux-saga"]
+      react: ["react", "redux", "redux-saga", "graphql", "apollo"]
     },
-    backend: ["nodejs", "mongodb", "firebase"],
+    backend: ["nodejs", "mongodb", "firebase", "graphql", "prisma"],
     [window.innerWidth <= 815 ? "tests" : "testing"]: ["jest", "enzyme"]
   },
   projects: [

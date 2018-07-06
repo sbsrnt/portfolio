@@ -25,83 +25,71 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail:before {
-  content: "\e0e1";
-  color: white;
+.icon-apollo:before {
+  content: "\e900";
+  color: #fff;
 }
-.icon-linkedin:before {
-  content: "\e904";
-  color: #21609b;
+.icon-prisma:before {
+  content: "\e901";
+  color: #fff;
 }
-.icon-discord:before {
-  content: "\e905";
-  color: #7289da;
-}
-.icon-jquery:before {
-  content: "\e906";
-  color: #21609b;
+.icon-graphql:before {
+  content: "\e902";
+  color: #e535ab;
 }
 .icon-jest:before {
-  content: "\e90a";
+  content: "\e903";
   color: #c63d14;
 }
-.icon-twitch:before {
-  content: "\e90b";
-  color: #65459b;
-}
-.icon-github:before {
-  content: "\e90c";
-  color: white;
-}
-.icon-lodash:before {
-  content: "\e903";
-  color: #3492ff;
-}
-.icon-mongodb:before {
-  content: "\e901";
-  color: #499d4a;
-}
-.icon-bootstrap:before {
-  content: "\e902";
-  color: #9472cb;
-}
 .icon-nodejs:before {
-  content: "\e900";
+  content: "\e904";
+  color: #8cc84b;
+}
+.icon-redux-saga:before {
+  content: "\e905";
   color: #8cc84b;
 }
 .icon-redux:before {
-  content: "\e909";
+  content: "\e906";
   color: #9472cb;
 }
+.icon-react:before {
+  content: "\e907";
+  color: #00d8ff;
+}
+.icon-lodash:before {
+  content: "\e908";
+  color: #3492ff;
+}
+.icon-jquery:before {
+  content: "\e909";
+  color: #21609b;
+}
+.icon-javascript:before {
+  content: "\e90a";
+  color: #f0db4f;
+}
+.icon-scss:before {
+  content: "\e90b";
+  color: #cd6799;
+}
 .icon-css:before {
-  content: "\e90e";
+  content: "\e90c";
   color: #305ea6;
+}
+.icon-html:before {
+  content: "\e90d";
+  color: #e34c26;
+}
+.icon-firebase:before {
+  content: "\e90e";
+  color: #ffcb2d;
 }
 .icon-enzyme:before {
   content: "\e90f";
   color: #cd6799;
 }
-.icon-firebase:before {
+.icon-mongodb:before {
   content: "\e910";
-  color: #ffcb2d;
-}
-.icon-html:before {
-  content: "\e911";
-  color: #e34c26;
-}
-.icon-javascript:before {
-  content: "\e912";
-  color: #f0db4f;
-}
-.icon-react:before {
-  content: "\e915";
-  color: #00d8ff;
-}
-.icon-redux-saga:before {
-  content: "\e916";
-  color: #8cc84b;
-}
-.icon-scss:before {
-  content: "\e918";
-  color: #cd6799;
+  color: #499d4a;
 }
