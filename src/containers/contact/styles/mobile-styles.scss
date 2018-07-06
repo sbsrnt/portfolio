@@ -1,0 +1,20 @@
+@import '../../../styles/mixins';
+
+@include screen('mobile'){
+  .section__contact {
+    ul {
+      padding-top: 0;
+      padding-bottom: 0;
+
+      .contact__method {
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

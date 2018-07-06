@@ -7,17 +7,15 @@
   src: url('../assets/ALLEGRO.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: url(../assets/sky.jpg) no-repeat center center fixed;
-
+  background: black url(../assets/sky.jpg) no-repeat fixed center center;
   &::-webkit-scrollbar{width: 0}
 }
 
-html, #root, .App, .particles {
+html, body, #root, .App, .particles {
   height: 100%;
 }
 
@@ -39,4 +37,15 @@ canvas {
   width: calc(100% - 20px);
   padding: 10px;
   color: white;
+}
+
+@include screen('mobile'){
+  html{
+    overflow: hidden;
+  }
+
+  body {
+    overflow: scroll;
+    @include transition(all ease 1s);
+  }
 }

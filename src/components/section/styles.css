@@ -25,9 +25,13 @@ section {
  * Desktop
  */
 @media only screen and (max-width: 815px) {
-  section h3:after {
-    width: 50%; }
-  section.section__projects h3:after, section.section__aboutMe h3:after {
-    width: 70%; } }
+  section {
+    grid-template-rows: 80px auto;
+    height: calc(100vh - 80px); }
+    section h3:after {
+      width: 50%;
+      bottom: 20px; }
+    section.section__projects h3:after, section.section__aboutMe h3:after {
+      width: 70%; } }
 
 /*# sourceMappingURL=styles.css.map */

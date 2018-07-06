@@ -132,11 +132,11 @@ abbr, acronym {
   font-style: normal; }
 body {
   font-family: "Open Sans", sans-serif;
-  background: url(../assets/sky.jpg) no-repeat center center fixed; }
+  background: black url(../assets/sky.jpg) no-repeat fixed center center; }
   body::-webkit-scrollbar {
     width: 0; }
 
-html, #root, .App, .particles {
+html, body, #root, .App, .particles {
   height: 100%; }
 
 canvas {
@@ -155,5 +155,18 @@ canvas {
   width: calc(100% - 20px);
   padding: 10px;
   color: white; }
+
+/*
+ * Desktop
+ */
+@media only screen and (max-width: 815px) {
+  html {
+    overflow: hidden; }
+
+  body {
+    overflow: scroll;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    transition: all ease 1s; } }
 
 /*# sourceMappingURL=index.css.map */

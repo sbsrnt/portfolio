@@ -1,7 +1,8 @@
 import React from "react";
 import data from "../../data";
 import Icon from "../../components/icon/icon";
-import "./styles.css";
+import "./styles/styles.css";
+import "./styles/mobile-styles.css";
 
 const Contact = () => {
   const mapContactMethods = () =>
@@ -14,6 +15,7 @@ const Contact = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
+
           <p className="contact__label">
             {cmethod.media === "mail" ? "e-mail" : cmethod.media}
           </p>
